@@ -1,3 +1,4 @@
+<!-- This file makes it so you can comment out lines using the ctrl + / shortcut -->
 <?xml version="1.0" encoding="UTF-8"?>
 <plist version="1.0">
 <dict>
@@ -7,12 +8,6 @@
     <string>text.lammps</string>
     <key>settings</key>
     <dict>
-        <!-- <key>decreaseIndentPattern</key> -->
-        <!-- <string>^\s*(elif|else|except|finally)\b.*:</string> -->
-        <!-- <key>increaseIndentPattern</key> -->
-        <!-- <string>^\s*(class|(\basync\s+)?(def|for|with)|elif|else|except|finally|if|try|while)\b.*:\s*$</string> -->
-        <!-- <key>disableIndentNextLinePattern</key> -->
-        <!-- <string></string> -->
         <key>shellVariables</key>
         <array>
             <dict>
