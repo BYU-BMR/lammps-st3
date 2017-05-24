@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+fix ${1:ID} ${2:group-ID} ${3:style} ${4:args}
+unfix ${1:ID}
+]]></content>
+    <!-- Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>fix</tabTrigger> 
+    <!-- Set a scope to limit where the snippet will trigger -->
+    <scope>text.lammps</scope>
+    <description>LAMMPS fix command</description>
+</snippet>

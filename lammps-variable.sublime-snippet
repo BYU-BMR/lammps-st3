@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+variable ${1:NAME} equal ${2:VALUE}
+]]></content>
+    <!-- Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>var</tabTrigger> 
+    <!-- Set a scope to limit where the snippet will trigger -->
+    <scope>text.lammps</scope>
+    <description>LAMMPS equal style variable</description>
+</snippet>
