@@ -1,16 +1,25 @@
-#Snippets for quick LAMMPS input file
 
-Put these files in you _User_ folder in ST3 for file highlighting and auto-completion of lammps input files. _User_ folder can be accesed by going to menu: _Prefernces > Browse Packages_. Usually the bottom-most folder will be _User_.
+# LAMMPS Input File Syntax Highlighting
 
-All files with extension *.in or *.lammps should show syntax highlighting now.
+This repository contains files that tell the Sublime Text 3 code editor how to color LAMMPS input file so that they are easier to read.
 
-Currently there are 4 kinds of snippets: 
+Put these files in your _User_ folder in Sublime Text 3 for file highlighting of lammps input files. The _User_ folder can be accesed by going to menu: _Preferences > Browse Packages_. Usually the bottom folder will be _User_.
 
-1. For initialization (atom type, periodic boundary etc). It contains all settings most commonly used by _me_ you can edit it as per your wish. To use it write **init** followed by <kbd>Tab</kbd> to complete it.
-2. For input coeff styles defination like angle_style etc. type **styles** followed by <kbd>Tab</kbd> to complete it. now use <kbd>Tab</kbd> to cycle through all the fields you want to edit or fill.
-3. Input/Output Data Files: Triggered by **data** + <kbd>Tab</kbd>. It will define an input read data file, which you shall edit. Followed by trajectory file vor viewing in VMD (lammpstrj) then binary restart file, thermo output for log file and timestep in the end. Use <kbd>Tab</kbd> to cycle through all relevent fields
-4. Fixes: Currently only NVT and NPT are there, might add more later. To invoke type **nvt** or **npt** followed by <kbd>Tab</kbd>. As above, use <kbd>Tab</kbd> to cycle through all relevent editable fields.
+All files with extension *.in or *.lammps should now show syntax highlighting.
 
-So essentially now just few strokes: **init** + <kbd>Tab</kbd>, **styles** + <kbd>Tab</kbd>, **data** + <kbd>Tab</kbd>, **npt** or **nvt** + <kbd>Tab</kbd> should be able to give you a basic lammps input file.
+You may have to close sublime and open it again for the changes to take effect.
 
-As it should be obvious if anything goes wrong with your simulations or computers or anything else, you are only responsible for that.
+## Snippets
+
+In addition to syntax highlighting, we have created a few sublime snippets to make our lives a little easier:
+
+1. To quickly add a variable.  To use it type **var** followed by <kbd>Tab</kbd> to autocomplete the variable declaration.  Keep clicking tab and it will cycle through all relevant fields.
+2. To quickly add a fix.  To use it type **fix** followed by <kbd>Tab</kbd> to autocomplete. Keep clicking tab and it will cycle through all relevant fields.
+
+_More snippets can easily be added by copying one of the .sublime-snippet files and then modifying it._ Go [here](http://sublimetext.info/docs/en/extensibility/snippets.html) for more information on snippets. 
+
+## Source
+
+This repository is based off of [ipcamit/lammps-st3](https://github.com/ipcamit/lammps-st3)
+
+In [ipcamit/lammps-st3](https://github.com/ipcamit/lammps-st3) they use the old .tmLanguage file format.  This repository uses the new .sublime-syntax file format.
