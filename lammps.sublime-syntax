@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-name: lammps
+name: LAMMPS
 file_extensions: [in,lammps]
 scope: text.lammps
 
